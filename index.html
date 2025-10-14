@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIO SERVICES</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/docs/assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="/docs/Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- seo -->
+    <meta name="description"
+        content="" />
+    <meta name="keywords" content="" />
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div id="global-loader"
+        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-100 flex justify-center items-center z-50">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fbb03b]"></div>
+    </div>
+
+    <div id="bottomToTopScroll"></div>
+
+
+    <!-- HERO -->
+    <header id="hero" class="relative isolate bg-black text-zinc-100 lg:pt-[116px] py-24">
+        <div id="navbar"></div>
+        <div class="absolute inset-0 -z-10">
+            <div class="h-full w-full bg-center bg-cover"
+                style="background-image:url('/docs/assets/images/about.jpeg');"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90"></div>
+            <div class="absolute inset-0"
+                style="background: radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0) 60%);">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl">
+                <p data-aos="fade-up" class="uppercase tracking-[0.25em] text-zinc-400 text-xs sm:text-sm">
+                    Audio capture for live theatre & events
+                </p>
+
+                <h1 data-aos="fade-up" data-aos-delay="100"
+                    class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+                    Clean, minimal <span class="opacity-90">sound</span> that lets the
+                    <span class="opacity-90">performance</span> breathe.
+                </h1>
+
+                <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-zinc-300 max-w-2xl">
+                    Mobile recording tailored to stages, panels, and cultural spaces.
+                    Straightforward packages, flexible add-ons, and delivery you can trust.
+                </p>
+
+                <div data-aos="fade-up" data-aos-delay="300" class="mt-8 flex flex-wrap items-center gap-4">
+                    <a href="/book.html"
+                        class="inline-flex items-center justify-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 tracking-wide hover:opacity-80 transition">
+                        Book Now
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="/services.html"
+                        class="inline-flex items-center justify-center rounded-sm border border-zinc-600/60 px-6 py-3 tracking-wide text-zinc-100 hover:bg-white/5 transition">
+                        View Services
+                    </a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400" class="mt-6 text-sm text-zinc-400">
+                    Prefer to talk first? <a href="/contact.html" class="underline hover:opacity-80">Contact us</a>.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="xl:max-w-7xl mx-auto w-full md:mt-28 mt-16">
+        <section aria-label="Key stats"
+            class="max-w-7xl w-full mx-auto p-5 grid md:grid-cols-4 grid-cols-2 gap-y-10 gap-x-6 border-t border-b border-white/10 text-zinc-100">
+
+            <!-- Shows captured -->
+            <div data-aos="fade-up" class="w-full flex flex-col items-center justify-center gap-2 text-center">
+                <div class="text-zinc-500">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <h2 class="js-counter text-zinc-700 md:text-6xl text-4xl font-semibold tabular-nums" data-to="120"
+                    data-suffix="+">0
+                </h2>
+                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Shows Captured</p>
+            </div>
+
+            <!-- Event & corporate sessions -->
+            <div data-aos="fade-up" data-aos-delay="100"
+                class="w-full flex flex-col items-center justify-center gap-2 text-center">
+                <div class="text-zinc-500">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="250"
+                    data-suffix="+">0
+                </h2>
+                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Event Sessions</p>
+            </div>
+
+            <!-- Hours of audio delivered -->
+            <div data-aos="fade-up" data-aos-delay="200"
+                class="w-full flex flex-col items-center justify-center gap-2 text-center">
+                <div class="text-zinc-500">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="1000"
+                    data-suffix="+">0
+                </h2>
+                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Hours Delivered</p>
+            </div>
+
+            <!-- Client satisfaction -->
+            <div data-aos="fade-up" data-aos-delay="300"
+                class="w-full flex flex-col items-center justify-center gap-2 text-center">
+                <div class="text-zinc-500">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="99"
+                    data-suffix="%">0
+                </h2>
+                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Client Satisfaction</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        (function () {
+            const easeOut = t => 1 - Math.pow(1 - t, 3);
+            function animateCounter(el) {
+                const to = parseInt(el.dataset.to || '0', 10);
+                const dur = parseInt(el.dataset.duration || '1200', 10);
+                const suffix = el.dataset.suffix || '';
+                const start = performance.now();
+                function frame(now) {
+                    const p = Math.min(1, (now - start) / dur);
+                    const val = Math.round(easeOut(p) * to).toLocaleString();
+                    el.textContent = val + suffix;
+                    if (p < 1) requestAnimationFrame(frame);
+                }
+                requestAnimationFrame(frame);
+            }
+
+            const counters = document.querySelectorAll('.js-counter');
+            const obs = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target); // run once
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(el => obs.observe(el));
+        })();
+    </script>
+
+    <!-- SECTION 2 — SERVICES OVERVIEW -->
+    <section id="services-overview" class="bg-black text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+            <!-- Heading -->
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Our Services</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Recording built for live spaces</h2>
+                <p class="mt-3 text-zinc-300">Two clear paths—Theatre and Corporate &amp; Events—each with
+                    straightforward packages and flexible add-ons.</p>
+            </div>
+
+            <!-- Cards -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <!-- THEATRE -->
+                <div data-aos="fade-up" class="group relative overflow-hidden rounded-2xl border border-white/10">
+                    <!-- bg image (replace src) -->
+                    <div class="absolute inset-0 -z-10">
+                        <div class="h-full w-full bg-center bg-cover opacity-70 group-hover:opacity-90 transition"
+                            style="background-image:url('/docs/assets/images/services-theatre.jpg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-300">
+                            <i class="fa-solid fa-mask"></i> Theatre
+                        </div>
+                        <h3 class="mt-3 text-2xl sm:text-3xl font-semibold">Theatre Recording</h3>
+                        <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i>
+                                Clean dialogue capture with discreet mic placement</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i>
+                                Packages from Essential to Enterprise</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i>
+                                Optional stems, extra mics, and delivery add-ons</li>
+                        </ul>
+
+                        <div class="mt-6 flex flex-wrap items-center gap-3">
+                            <a href="/book.html?cat=theatre"
+                                class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm tracking-wide hover:opacity-80 transition"
+                                aria-label="Book a theatre recording">
+                                Book Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="/services.html#theatre"
+                                class="inline-flex items-center rounded-sm border border-white/15 px-5 py-2.5 text-sm tracking-wide hover:bg-white/5 transition"
+                                aria-label="View theatre packages">
+                                View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CORPORATE & EVENTS -->
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="group relative overflow-hidden rounded-2xl border border-white/10">
+                    <!-- bg image (replace src) -->
+                    <div class="absolute inset-0 -z-10">
+                        <div class="h-full w-full bg-center bg-cover opacity-70 group-hover:opacity-90 transition"
+                            style="background-image:url('/docs/assets/images/services-events.jpg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-300">
+                            <i class="fa-solid fa-people-group"></i> Corporate &amp; Events
+                        </div>
+                        <h3 class="mt-3 text-2xl sm:text-3xl font-semibold">Corporate &amp; Events Recording</h3>
+                        <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i>
+                                Panels, talks, and conferences with multi-speaker capture</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i>
+                                Options from Presentation to Broadcast-Ready</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check mt-1 text-zinc-400"></i> Fast
+                                turnaround and on-site coordination</li>
+                        </ul>
+
+                        <div class="mt-6 flex flex-wrap items-center gap-3">
+                            <a href="/book.html?cat=events"
+                                class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm tracking-wide hover:opacity-80 transition"
+                                aria-label="Book an events recording">
+                                Book Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="/services.html#events"
+                                class="inline-flex items-center rounded-sm border border-white/15 px-5 py-2.5 text-sm tracking-wide hover:bg-white/5 transition"
+                                aria-label="View corporate and events packages">
+                                View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- subtle divider -->
+            <div class="mt-12 h-px bg-white/10"></div>
+        </div>
+    </section>
+
+
+    <section id="about-teaser" class="bg-black text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+                <div data-aos="fade-up">
+                    <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">About</p>
+                    <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Audio that serves the performance</h2>
+                    <p class="mt-4 text-zinc-300 max-w-xl">We specialise in clean, unobtrusive capture for theatre,
+                        panels, and cultural events. Minimal footprint on site, clear communication, and delivery you
+                        can trust.</p>
+                    <ul class="mt-6 space-y-3 text-zinc-300">
+                        <li class="flex items-start gap-3"><i
+                                class="fa-solid fa-microphone mt-1 text-zinc-400"></i><span>Discreet mic placement and
+                                dialogue-first mixing</span></li>
+                        <li class="flex items-start gap-3"><i
+                                class="fa-solid fa-sliders mt-1 text-zinc-400"></i><span>Straightforward packages with
+                                flexible add-ons</span></li>
+                        <li class="flex items-start gap-3"><i
+                                class="fa-solid fa-truck-fast mt-1 text-zinc-400"></i><span>Reliable timelines and clear
+                                deliverables</span></li>
+                    </ul>
+                    <div class="mt-7 flex flex-wrap items-center gap-3">
+                        <a href="/about.html"
+                            class="inline-flex items-center rounded-sm border border-white/15 px-5 py-2.5 text-sm tracking-wide hover:bg-white/5 transition">Read
+                            More</a>
+                        <a href="/book.html"
+                            class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm tracking-wide hover:opacity-80 transition">Book
+                            Now<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="relative overflow-hidden rounded-2xl border border-white/10">
+                    <div class="aspect-[4/3] bg-center bg-cover"
+                        style="background-image:url('/docs/assets/images/about-teaser.jpg');"></div>
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="featured-packages" class="bg-black text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Featured Packages</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Popular choices to get you started</h2>
+                <p class="mt-3 text-zinc-300">Pick a package and tailor it with add-ons during booking.</p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div data-aos="fade-up"
+                    class="group rounded-2xl border border-white/10 p-6 sm:p-7 bg-white/[0.02] hover:bg-white/[0.04] transition">
+                    <div class="text-xs uppercase tracking-widest text-zinc-400 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-mask"></i> Theatre
+                    </div>
+                    <h3 class="mt-3 text-xl font-semibold">Essential</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                        <li class="flex gap-2"><i
+                                class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Dialogue-first capture</span>
+                        </li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Discreet
+                                on-site footprint</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Standard
+                                delivery</span></li>
+                    </ul>
+                    <div class="mt-6 flex flex-col gap-2">
+                        <a href="/book.html?cat=theatre&pkg=theatre-essential"
+                            class="inline-flex items-center justify-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-4 py-2 text-sm tracking-wide hover:opacity-80 transition">Request
+                            this package<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                        <a href="/services.html#theatre"
+                            class="inline-flex items-center justify-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Details</a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="group rounded-2xl border border-white/10 p-6 sm:p-7 bg-white/[0.02] hover:bg-white/[0.04] transition">
+                    <div class="text-xs uppercase tracking-widest text-zinc-400 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-mask"></i> Theatre
+                    </div>
+                    <h3 class="mt-3 text-xl font-semibold">Premium</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Multi-mic
+                                capture</span></li>
+                        <li class="flex gap-2"><i
+                                class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Scene-by-scene balance</span>
+                        </li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Priority
+                                turnaround</span></li>
+                    </ul>
+                    <div class="mt-6 flex flex-col gap-2">
+                        <a href="/book.html?cat=theatre&pkg=theatre-premium"
+                            class="inline-flex items-center justify-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-4 py-2 text-sm tracking-wide hover:opacity-80 transition">Request
+                            this package<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                        <a href="/services.html#theatre"
+                            class="inline-flex items-center justify-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Details</a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="group rounded-2xl border border-white/10 p-6 sm:p-7 bg-white/[0.02] hover:bg-white/[0.04] transition">
+                    <div class="text-xs uppercase tracking-widest text-zinc-400 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-people-group"></i> Events
+                    </div>
+                    <h3 class="mt-3 text-xl font-semibold">Presentation Capture</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Keynotes and
+                                talks</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Podium or
+                                clip mic</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Clean room
+                                feed</span></li>
+                    </ul>
+                    <div class="mt-6 flex flex-col gap-2">
+                        <a href="/book.html?cat=events&pkg=events-presentation"
+                            class="inline-flex items-center justify-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-4 py-2 text-sm tracking-wide hover:opacity-80 transition">Request
+                            this package<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                        <a href="/services.html#events"
+                            class="inline-flex items-center justify-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Details</a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="group rounded-2xl border border-white/10 p-6 sm:p-7 bg-white/[0.02] hover:bg-white/[0.04] transition">
+                    <div class="text-xs uppercase tracking-widest text-zinc-400 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-people-group"></i> Events
+                    </div>
+                    <h3 class="mt-3 text-xl font-semibold">Broadcast-Ready Event</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Multi-speaker
+                                capture</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Live mix with
+                                safety</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Tech
+                                coordination</span></li>
+                    </ul>
+                    <div class="mt-6 flex flex-col gap-2">
+                        <a href="/book.html?cat=events&pkg=events-broadcast"
+                            class="inline-flex items-center justify-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-4 py-2 text-sm tracking-wide hover:opacity-80 transition">Request
+                            this package<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                        <a href="/services.html#events"
+                            class="inline-flex items-center justify-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="process" class="bg-black text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">How It Works</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">From request to delivery, clearly</h2>
+                <p class="mt-3 text-zinc-300">A focused four-step flow designed for live spaces—transparent, flexible,
+                    and fast.</p>
+            </div>
+
+            <div class="relative mt-10">
+                <div
+                    class="hidden md:block absolute inset-x-0 top-9 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8">
+                    <div data-aos="fade-up"
+                        class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
+                        <div class="flex items-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
+                                    1</span>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Request</h3>
+                        </div>
+                        <p class="mt-4 text-zinc-300">Tell us your date, location, and service type. Choose a package
+                            and optional add-ons.</p>
+                        <div class="mt-6">
+                            <a href="/book.html"
+                                class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-4 py-2 text-sm tracking-wide hover:opacity-80 transition">Start
+                                Request<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="100"
+                        class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
+                        <div class="flex items-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
+                                    2</span>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Confirm</h3>
+                        </div>
+                        <p class="mt-4 text-zinc-300">We confirm availability and details by email. No online
+                            payment—invoice arrives after confirmation.</p>
+                        <div class="mt-6">
+                            <a href="/contact.html"
+                                class="inline-flex items-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Questions?</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
+                        <div class="flex items-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
+                                    3</span>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-microphone-lines"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Record</h3>
+                        </div>
+                        <p class="mt-4 text-zinc-300">On-site capture with discreet setup. Multi-mic options and stems
+                            available when needed.</p>
+                        <div class="mt-6">
+                            <a href="/services.html#theatre"
+                                class="inline-flex items-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">See
+                                Packages</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="300"
+                        class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
+                        <div class="flex items-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
+                                    4</span>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-file-audio"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Deliver</h3>
+                        </div>
+                        <p class="mt-4 text-zinc-300">Clear timelines and formats that fit your workflow. Priority
+                            delivery available on select packages.</p>
+                        <div class="mt-6">
+                            <a href="/services.html#events"
+                                class="inline-flex items-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Delivery
+                                Options</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 flex flex-col items-start sm:items-center sm:text-center gap-4">
+                <p class="text-sm text-zinc-400">Ready to go? Send your request and we’ll confirm availability and next
+                    steps by email.</p>
+                <a href="/book.html"
+                    class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 text-sm tracking-wide hover:opacity-80 transition">Book
+                    Now<i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="bg-black text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Testimonials</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Trusted by stages and teams</h2>
+                <p class="mt-3 text-zinc-300">A discreet presence on site, a clear presence in the mix.</p>
+            </div>
+
+            <div class="mt-8 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none]" data-aos="fade-up"
+                data-aos-delay="100">
+                <ul class="flex items-center gap-10 opacity-80 hover:opacity-100 transition min-w-max pb-2">
+                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-1.png" alt="Company One"
+                            class="h-10 w-auto grayscale invert" /></li>
+                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-2.png" alt="Company Two"
+                            class="h-10 w-auto grayscale invert" /></li>
+                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-3.png" alt="Company Three"
+                            class="h-10 w-auto grayscale invert" /></li>
+                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-4.png" alt="Company Four"
+                            class="h-10 w-auto grayscale invert" /></li>
+                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-5.png" alt="Company Five"
+                            class="h-10 w-auto grayscale invert" /></li>
+                </ul>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <article data-aos="fade-up"
+                    class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
+                    <div class="flex items-center gap-4">
+                        <img src="/docs/assets/images/avatar-1.jpg" alt="Reviewer"
+                            class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
+                        <div>
+                            <p class="font-medium">Amelia Hart</p>
+                            <p class="text-xs text-zinc-400">Theatre Director</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center gap-1 text-amber-300">
+                        <i class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i>
+                    </div>
+                    <p class="mt-4 text-zinc-300 leading-relaxed">Zero fuss and crystal dialogue. The mics were
+                        invisible, the turnaround clear, and the final mix felt true to the performance.</p>
+                </article>
+
+                <article data-aos="fade-up" data-aos-delay="100"
+                    class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
+                    <div class="flex items-center gap-4">
+                        <img src="/docs/assets/images/avatar-2.jpg" alt="Reviewer"
+                            class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
+                        <div>
+                            <p class="font-medium">Rafi Khan</p>
+                            <p class="text-xs text-zinc-400">Event Producer</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center gap-1 text-amber-300">
+                        <i class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i>
+                    </div>
+                    <p class="mt-4 text-zinc-300 leading-relaxed">Handled a tricky multi-speaker panel with ease. Clean
+                        feeds for video, clear comms, and delivery exactly when promised.</p>
+                </article>
+
+                <article data-aos="fade-up" data-aos-delay="200"
+                    class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
+                    <div class="flex items-center gap-4">
+                        <img src="/docs/assets/images/avatar-3.jpg" alt="Reviewer"
+                            class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
+                        <div>
+                            <p class="font-medium">Sofia Mendes</p>
+                            <p class="text-xs text-zinc-400">Cultural Programme Lead</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center gap-1 text-amber-300">
+                        <i class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i><i class="fa-solid fa-star text-xs"></i><i
+                            class="fa-solid fa-star text-xs"></i>
+                    </div>
+                    <p class="mt-4 text-zinc-300 leading-relaxed">Minimal footprint, maximum clarity. We appreciated the
+                        options for stems and the tidy documentation on delivery.</p>
+                </article>
+            </div>
+
+            <div class="mt-10 flex flex-col items-start sm:items-center sm:text-center gap-4">
+                <p class="text-sm text-zinc-400">Need references or example deliverables?</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="/contact.html"
+                        class="inline-flex items-center rounded-sm border border-white/15 px-6 py-3 text-sm tracking-wide hover:bg-white/5 transition">Contact</a>
+                    <a href="/book.html"
+                        class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 text-sm tracking-wide hover:opacity-80 transition">Book
+                        Now<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cta-final" class="relative bg-black text-zinc-100 overflow-hidden">
+        <div class="absolute -top-32 -right-24 h-96 w-96 rounded-full blur-3xl opacity-20"
+            style="background: radial-gradient(50% 50% at 50% 50%, #ffffff22 0%, #00000000 70%);"></div>
+        <div class="absolute -bottom-24 -left-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-20"
+            style="background: radial-gradient(50% 50% at 50% 50%, #ffffff22 0%, #00000000 70%);"></div>
+
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-24 py-16">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Ready?</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-semibold">Let’s capture your performance with
+                    clarity</h2>
+                <p class="mt-4 text-zinc-300">Send a request with your date, location, and service type. We’ll confirm
+                    availability and follow up by email—no online payment needed.</p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-3" data-aos="fade-up" data-aos-delay="100">
+                <a href="/book.html"
+                    class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 text-sm tracking-wide hover:opacity-80 transition">
+                    Book Now
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="/contact.html"
+                    class="inline-flex items-center rounded-sm border border-white/15 px-6 py-3 text-sm tracking-wide hover:bg-white/5 transition">
+                    Contact
+                </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="150">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+                    <div class="text-zinc-400 text-xs uppercase tracking-widest">What you’ll get</div>
+                    <p class="mt-2 text-zinc-200">Clean dialogue, discreet setup, clear timelines.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+                    <div class="text-zinc-400 text-xs uppercase tracking-widest">Packages</div>
+                    <p class="mt-2 text-zinc-200">Theatre and Corporate & Events with flexible add-ons.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+                    <div class="text-zinc-400 text-xs uppercase tracking-widest">Delivery</div>
+                    <p class="mt-2 text-zinc-200">Formats that fit your workflow; priority options available.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row sm:items-center gap-3"
+                data-aos="fade-up" data-aos-delay="200">
+                <div class="inline-flex items-center gap-2 text-zinc-400 text-sm">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+                    Typically replies within 1–2 business days
+                </div>
+                <div class="sm:ml-auto text-sm text-zinc-400">
+                    Prefer to talk first? <a href="/contact.html" class="underline hover:opacity-80">Get in touch</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="bg-black md:py-20 py-10 md:mt-16 mt-10">
+        <section class="w-full p-5 max-w-4xl mx-auto">
+            <h2 data-aos="fade-up" class="text-zinc-100 font-semibold md:text-5xl text-center text-3xl">Frequently Asked
+                Questions</h2>
+            <p data-aos="fade-up" class="text-zinc-400 mt-2 md:mt-5 text-center md:text-lg">Answers about booking,
+                on-site recording, and delivery.</p>
+
+            <div class="md:mt-14 mt-10 space-y-5">
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(1)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-1">
+                        <p class="text-lg text-start font-medium text-zinc-100">How do I book a recording?</p>
+                        <i id="icon-1"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">Go to the Booking page, pick <span
+                                class="font-medium">Theatre</span> or <span class="font-medium">Corporate &amp;
+                                Events</span>, choose a package and any add-ons, then share your date, time, and
+                            location. We’ll confirm availability by email.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(2)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-2">
+                        <p class="text-lg text-start font-medium text-zinc-100">Do you take online payments?</p>
+                        <i id="icon-2"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">Not on the website. Submitting the form is a <span
+                                class="font-medium">request</span>. If we’re available, we confirm details and send
+                            payment instructions by email.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(3)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-3">
+                        <p class="text-lg text-start font-medium text-zinc-100">What info should I include when booking?
+                        </p>
+                        <i id="icon-3"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">Date, start time, estimated duration, venue name and address,
+                            service category, package, any add-ons, on-site contact, and delivery preferences (e.g.,
+                            WAV/MP3, stems).</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(4)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-4">
+                        <p class="text-lg text-start font-medium text-zinc-100">Which areas do you cover?</p>
+                        <i id="icon-4"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">We typically cover the local metro area and nearby regions. Travel
+                            outside this zone is available; additional travel time/expenses may apply. Multi-day quotes
+                            available on request.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(5)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-5">
+                        <p class="text-lg text-start font-medium text-zinc-100">What’s the delivery timeline and format?
+                        </p>
+                        <i id="icon-5"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">Standard delivery is provided within the agreed timeline for your
+                            package. Priority turnaround may be available. We deliver in WAV/MP3 as standard; isolated
+                            stems and archive extensions are available as add-ons.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.02] border border-white/10 rounded-2xl p-6" data-aos="fade-up">
+                    <button onclick="toggleAccordion(6)" class="w-full cursor-pointer flex justify-between items-center"
+                        aria-expanded="false" aria-controls="content-6">
+                        <p class="text-lg text-start font-medium text-zinc-100">Can you coordinate with our video team?
+                        </p>
+                        <i id="icon-6"
+                            class="fa-solid fa-angle-down text-zinc-400 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="pt-3 text-zinc-300">Yes. We can provide a clean room feed, slate tone if needed, and
+                            liaise with the technical crew. Multi-speaker panels and extra mics are supported; add
+                            additional channels as required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            const button = document.querySelector(`button[onclick="toggleAccordion(${index})"]`);
+            const allContents = document.querySelectorAll('[id^="content-"]');
+            const allIcons = document.querySelectorAll('[id^="icon-"]');
+            const allButtons = document.querySelectorAll('button[onclick^="toggleAccordion("]');
+
+            allContents.forEach((c) => { if (c !== content) c.style.maxHeight = '0'; });
+            allIcons.forEach((i) => { if (i !== icon) i.classList.remove('rotate-180'); });
+            allButtons.forEach((b) => { if (b !== button) b.setAttribute('aria-expanded', 'false'); });
+
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.classList.remove('rotate-180');
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('[id^="content-"]').forEach((c) => {
+                if (c.style.maxHeight && c.style.maxHeight !== '0px') {
+                    c.style.maxHeight = c.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+
+
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
+</body>
+
+</html>
