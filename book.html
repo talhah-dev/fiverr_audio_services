@@ -27,22 +27,22 @@
 <body class="overflow-x-hidden">
 
     <div id="global-loader"
-        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-100 flex justify-center items-center z-50">
-        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fbb03b]"></div>
+        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-900 flex justify-center items-center z-50">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fff]"></div>
     </div>
 
     <div id="bottomToTopScroll"></div>
 
 
-    <section id="booking-hero" class="relative isolate bg-black text-zinc-100">
+    <section id="booking-hero" class="relative isolate bg-black text-zinc-100 overflow-x-hidden">
         <div id="navbar"></div>
         <div class="absolute inset-0 -z-10">
             <div class="h-full w-full bg-center bg-cover"
-                style="background-image:url('/docs/assets/images/booking-hero.jpg');"></div>
+                style="background-image:url('https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvb2tpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600');"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/90"></div>
         </div>
 
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-16 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div data-aos="fade-up">
                     <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Booking</p>
@@ -87,14 +87,23 @@
                             </div>
                         </div>
 
-                        <div>
-                            <label for="qb_date" class="block text-sm text-zinc-300 mb-2">Date needed</label>
+                        <div class="col-span-1">
+                            <label for="qb_date" class="block text-sm text-zinc-300 mb-2">Date Needed</label>
                             <div class="relative">
                                 <span
-                                    class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400"><i
-                                        class="fa-solid fa-calendar-day"></i></span>
-                                <input id="qb_date" name="date" type="date"
-                                    class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none pl-10 pr-3 py-3 text-zinc-100">
+                                    class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400">
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                </span>
+
+                                <input id="qb_date" name="date" type="date" class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none
+             pl-10 pr-12 py-3 text-zinc-100 placeholder:text-zinc-500 date-input" placeholder="mm/dd/yyyy"
+                                    inputmode="none">
+
+                                <!-- Right-side clickable icon -->
+                                <button type="button" aria-label="Open date picker" class="absolute right-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-lg border border-white/10
+             bg-white/[0.06] hover:bg-white/[0.10] flex items-center justify-center" data-open-picker="#qb_date">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </button>
                             </div>
                         </div>
 
@@ -181,8 +190,8 @@
         })();
     </script>
 
-    <section id="packages" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+    <section id="packages" class="bg-black overflow-x-hidden text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-16 py-12">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Packages</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Choose a path and tailor it</h2>
@@ -499,8 +508,8 @@
         })();
     </script>
 
-    <section id="addons" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+    <section id="addons" class="bg-black overflow-x-hidden text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-16 py-12">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Add-ons</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Fine-tune your booking</h2>
@@ -516,7 +525,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-microphone"></i>
                                 </div>
                                 <div>
@@ -538,7 +547,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-wave-square"></i>
                                 </div>
                                 <div>
@@ -560,7 +569,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-sliders"></i>
                                 </div>
                                 <div>
@@ -582,7 +591,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-bolt"></i>
                                 </div>
                                 <div>
@@ -603,7 +612,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-people-arrows"></i>
                                 </div>
                                 <div>
@@ -625,7 +634,7 @@
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
-                                    class="h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-hard-drive"></i>
                                 </div>
                                 <div>
@@ -648,7 +657,7 @@
                     <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
                     <span><span id="addons-count" class="font-semibold">0</span> selected</span>
                 </div>
-                <div class="ml-auto flex items-center gap-3">
+                <div class="ml-auto flex md:flex-row flex-col items-center gap-3">
                     <div class="text-sm text-zinc-400">Subtotal</div>
                     <div id="addons-total" class="text-lg font-semibold">$0</div>
                     <button id="addons-continue"
@@ -738,8 +747,8 @@
     </script>
 
 
-    <section id="booking-form" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+    <section id="booking-form" class="bg-black overflow-x-hidden text-zinc-100">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-16 py-12">
             <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div class="lg:col-span-2">
                     <div class="relative rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
@@ -855,14 +864,24 @@
                             </div>
 
                             <div class="col-span-1">
-                                <label for="bk_date" class="block text-sm text-zinc-300 mb-2">Date<span
-                                        class="text-zinc-400"> *</span></label>
+                                <label for="bk_date" class="block text-sm text-zinc-300 mb-2">
+                                    Date <span class="text-zinc-400">*</span>
+                                </label>
                                 <div class="relative">
                                     <span
-                                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400"><i
-                                            class="fa-solid fa-calendar-day"></i></span>
-                                    <input id="bk_date" name="date" type="date" required
-                                        class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none pl-10 pr-3 py-3 text-zinc-100">
+                                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400">
+                                        <i class="fa-solid fa-calendar-day"></i>
+                                    </span>
+
+                                    <input id="bk_date" name="date" type="date" required class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none
+             pl-10 pr-12 py-3 text-zinc-100 placeholder:text-zinc-500 date-input" placeholder="mm/dd/yyyy"
+                                        inputmode="none">
+
+                                    <!-- Right-side clickable icon -->
+                                    <button type="button" aria-label="Open date picker" class="absolute right-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-lg border border-white/10
+             bg-white/[0.06] hover:bg-white/[0.10] flex items-center justify-center" data-open-picker="#bk_date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </button>
                                 </div>
                             </div>
 
@@ -870,10 +889,18 @@
                                 <label for="bk_time" class="block text-sm text-zinc-300 mb-2">Start Time</label>
                                 <div class="relative">
                                     <span
-                                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400"><i
-                                            class="fa-solid fa-clock"></i></span>
-                                    <input id="bk_time" name="time" type="time"
-                                        class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none pl-10 pr-3 py-3 text-zinc-100">
+                                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+
+                                    <input id="bk_time" name="time" type="time" class="w-full rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none
+             pl-10 pr-12 py-3 text-zinc-100 placeholder:text-zinc-500 time-input" step="900" inputmode="none">
+
+                                    <!-- Right-side clickable icon -->
+                                    <button type="button" aria-label="Open time picker" class="absolute right-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-lg border border-white/10
+             bg-white/[0.06] hover:bg-white/[0.10] flex items-center justify-center" data-open-picker="#bk_time">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </button>
                                 </div>
                             </div>
 
@@ -1001,7 +1028,7 @@
         </div>
     </section>
 
-    <div id="bookingPopup" class="fixed inset-0 z-[70] hidden bg-black/70 backdrop-blur">
+    <div id="bookingPopup" class="fixed overflow-x-hidden inset-0 z-[70] hidden bg-black/70 backdrop-blur">
         <div
             class="absolute left-1/2 top-1/2 w-[90%] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-zinc-900 p-6 text-zinc-100">
             <div id="bpSending" class="flex flex-col items-center text-center gap-3">
@@ -1274,6 +1301,55 @@
 
 
     <div id="footer"></div>
+
+    <script>
+        (function () {
+            const input = document.getElementById('qb_date');
+            const btn = document.querySelector('[data-open-picker="#qb_date"]');
+
+            function openPicker() {
+                if (input && typeof input.showPicker === 'function') {
+                    input.showPicker();
+                } else {
+                    input.focus();
+                }
+            }
+
+            input.addEventListener('click', openPicker);
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openPicker();
+                }
+            });
+            btn.addEventListener('click', openPicker);
+        })();
+
+        (function () {
+            function openPicker(input) {
+                if (input && typeof input.showPicker === 'function') {
+                    input.showPicker(); // Modern browsers
+                } else {
+                    input.focus(); // Fallback for Safari/Firefox
+                }
+            }
+
+            // Apply to both date and time inputs
+            ['bk_date', 'bk_time'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+
+                el.addEventListener('click', () => openPicker(el));
+                el.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openPicker(el);
+                    }
+                });
+            });
+        })();
+
+    </script>
 
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

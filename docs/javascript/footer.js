@@ -53,13 +53,8 @@ footer.innerHTML = `
 
     <div class="mt-10 h-px bg-white/10"></div>
 
-    <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row justify-center items-center">
       <p class="text-sm text-zinc-400">© 2025 Audio Services. All rights reserved.</p>
-      <div class="sm:ml-auto flex items-center gap-5 text-sm">
-        <a href="/privacy.html" class="text-zinc-400 hover:text-zinc-200 transition">Privacy</a>
-        <span class="text-white/20">|</span>
-        <a href="/terms.html" class="text-zinc-400 hover:text-zinc-200 transition">Terms</a>
-      </div>
     </div>
   </div>
 </footer>
