@@ -27,8 +27,8 @@
 <body class="overflow-x-hidden">
 
     <div id="global-loader"
-        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-100 flex justify-center items-center z-50">
-        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fbb03b]"></div>
+        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-900 flex justify-center items-center z-50">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fff]"></div>
     </div>
 
     <div id="bottomToTopScroll"></div>
@@ -38,9 +38,11 @@
     <section id="about-hero" class="relative isolate bg-black text-zinc-100">
         <div id="navbar"></div>
         <div class="absolute inset-0 -z-10">
-            <div class="h-full w-full bg-center bg-cover"
-                style="background-image:url('/docs/assets/images/about.jpeg');"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/90"></div>
+            <div class="h-full w-full bg-center bg-cover transform scale-x-[-1]"
+                style="background-image:url('https://images.unsplash.com/photo-1631220706319-657942774d02?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UHJvZmVzc2lvbmFsJTIwYXVkaW8lMjBmb3IlMjB0aGVhdHJlJTIwJTI2JTIwZXZlbnRzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600');">
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90"></div>
         </div>
 
         <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
@@ -151,28 +153,6 @@
                         <p class="mt-2 text-zinc-300">Equipment choices and placement that respect the stage picture and
                             audience experience.</p>
                     </article>
-                </div>
-            </div>
-
-            <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6" data-aos="fade-up">
-                    <div class="text-3xl font-semibold">99%</div>
-                    <div class="mt-1 text-zinc-400 text-sm">Happy Clients</div>
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6" data-aos="fade-up"
-                    data-aos-delay="50">
-                    <div class="text-3xl font-semibold">500+</div>
-                    <div class="mt-1 text-zinc-400 text-sm">Projects</div>
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="text-3xl font-semibold">20+</div>
-                    <div class="mt-1 text-zinc-400 text-sm">Team</div>
-                </div>
-                <div class="rounded-2xl border border-white/10 bg-white/[0.02] p-6" data-aos="fade-up"
-                    data-aos-delay="150">
-                    <div class="text-3xl font-semibold">100%</div>
-                    <div class="mt-1 text-zinc-400 text-sm">Satisfaction</div>
                 </div>
             </div>
         </div>
@@ -345,7 +325,7 @@
                 </article>
             </div>
 
-            <div class="mt-10 flex flex-wrap items-center gap-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="mt-10 flex flex-wrap justify-center items-center gap-3" data-aos="fade-up" data-aos-delay="150">
                 <a href="/services.html"
                     class="inline-flex items-center rounded-sm border border-white/15 px-6 py-3 text-sm tracking-wide hover:bg-white/5 transition">Explore
                     all services</a>
@@ -374,9 +354,7 @@
             </div>
 
             <div class="relative mt-12">
-                <div
-                    class="hidden lg:block absolute left-1/2 top-14 -translate-x-1/2 h-1 w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent">
-                </div>
+
 
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                     <article
@@ -433,7 +411,7 @@
                         </div>
                         <h3 class="mt-4 text-xl font-semibold">Capture</h3>
                         <p class="mt-2 text-sm text-zinc-300">Discreet on-site setup focused on clarity and consistency.
-                            Liaison with venue or video teams.</p>
+                            Liaison with venue.</p>
                         <ul class="mt-4 space-y-1.5 text-sm text-zinc-400">
                             <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-500"></i>Minimal
                                 footprint</li>
@@ -491,7 +469,7 @@
                 </div>
             </div>
 
-            <div class="mt-10 flex flex-wrap items-center gap-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="mt-10 flex flex-wrap justify-center items-center gap-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="/book.html"
                     class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 text-sm tracking-wide hover:opacity-80 transition">Request
                     a booking<i class="fa-solid fa-arrow-right ml-2"></i></a>
@@ -755,15 +733,6 @@
                         <span class="h-1.5 w-6 rounded-full bg-white/10" id="t-dot-3"></span>
                     </div>
                 </div>
-            </div>
-
-            <div class="mt-10 flex flex-wrap items-center gap-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="/book.html"
-                    class="inline-flex items-center rounded-sm border border-zinc-100 bg-zinc-100 text-black px-6 py-3 text-sm tracking-wide hover:opacity-80 transition">Request
-                    a booking<i class="fa-solid fa-arrow-right ml-2"></i></a>
-                <a href="/services.html"
-                    class="inline-flex items-center rounded-sm border border-white/15 px-6 py-3 text-sm tracking-wide hover:bg-white/5 transition">Explore
-                    services</a>
             </div>
         </div>
     </section>

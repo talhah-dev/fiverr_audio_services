@@ -6,7 +6,7 @@ const bottomToTopScroll = document.getElementById("bottomToTopScroll");
 
 bottomToTopScroll.innerHTML = `
 <div
-    class="bottomToTop fadeIn w-10 cursor-pointer z-40 bg-[#fbb03b] h-10 fixed bottom-5 right-5 hover:opacity-80 transition-all duration-500 hidden text-zinc-100 flex items-center justify-center rounded-lg "><i class="fa-solid fa-angle-up"></i>
+    class="bottomToTop fadeIn w-10 cursor-pointer z-40 bg-[#fff] h-10 fixed bottom-5 right-5 hover:opacity-80 transition-all duration-500 hidden text-zinc-900 flex items-center justify-center rounded-lg "><i class="fa-solid fa-angle-up"></i>
 </div>`
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -52,45 +52,7 @@ function hideLoader() {
     }, Math.max(0, remainingTime));
 }
 
-// Example usage:
 showLoader();
-// simulate some async task (like fetch or form submission)
 setTimeout(() => {
     hideLoader();
-}, 200); // even if task is fast, loader will stay at least 0.5s
-
-// faqs
-
-
-//   contact
-
-
-
-// swiper
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 10,
-//     breakpoints: {
-//         0: {
-//             slidesPerView: 1
-//         },
-//         640: {
-//             slidesPerView: 2
-//         },
-//         768: {
-//             slidesPerView: 4
-//         },
-//         1024: {
-//             slidesPerView: 5
-//         }
-//     },
-//     navigation: {
-//         nextEl: ".button-next",
-//         prevEl: ".button-prev",
-//     },
-//     autoplay: {
-//         delay: 3000,
-//     },
-//     loop: true,
-// });
+}, 200); 

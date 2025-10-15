@@ -19,32 +19,29 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- seo -->
-    <meta name="description"
-        content="" />
+    <meta name="description" content="" />
     <meta name="keywords" content="" />
 
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-black ">
 
     <div id="global-loader"
-        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-100 flex justify-center items-center z-50">
-        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fbb03b]"></div>
+        class="hidden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-900 flex justify-center items-center z-50">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#fff]"></div>
     </div>
 
     <div id="bottomToTopScroll"></div>
 
 
     <!-- HERO -->
-    <header id="hero" class="relative isolate bg-black text-zinc-100 lg:pt-[116px] py-24">
+    <header id="hero" class="relative isolate bg-black text-zinc-100 lg:pt-[116px] pt-24">
         <div id="navbar"></div>
         <div class="absolute inset-0 -z-10">
             <div class="h-full w-full bg-center bg-cover"
-                style="background-image:url('/docs/assets/images/about.jpeg');"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90"></div>
-            <div class="absolute inset-0"
-                style="background: radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0) 60%);">
+                style="background-image:url('https://images.unsplash.com/photo-1747155827987-5e78499b3830?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331');">
             </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/50"></div>
         </div>
 
         <!-- Content -->
@@ -84,58 +81,88 @@
         </div>
     </header>
 
+    <!-- STATS (dark/minimal) -->
     <div class="xl:max-w-7xl mx-auto w-full md:mt-28 mt-16">
         <section aria-label="Key stats"
             class="max-w-7xl w-full mx-auto p-5 grid md:grid-cols-4 grid-cols-2 gap-y-10 gap-x-6 border-t border-b border-white/10 text-zinc-100">
 
             <!-- Shows captured -->
             <div data-aos="fade-up" class="w-full flex flex-col items-center justify-center gap-2 text-center">
-                <div class="text-zinc-500">
+                <div class="text-zinc-400">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
-                <h2 class="js-counter text-zinc-700 md:text-6xl text-4xl font-semibold tabular-nums" data-to="120"
-                    data-suffix="+">0
+                <h2 class="js-counter md:text-6xl text-4xl font-semibold tabular-nums" data-to="120" data-suffix="+">0
                 </h2>
-                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Shows Captured</p>
+                <p class="text-zinc-400 md:text-sm text-xs tracking-wide uppercase">Shows Captured</p>
             </div>
 
             <!-- Event & corporate sessions -->
             <div data-aos="fade-up" data-aos-delay="100"
                 class="w-full flex flex-col items-center justify-center gap-2 text-center">
-                <div class="text-zinc-500">
+                <div class="text-zinc-400">
                     <i class="fa-solid fa-people-group"></i>
                 </div>
-                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="250"
-                    data-suffix="+">0
+                <h2 class="js-counter md:text-6xl text-4xl font-semibold tabular-nums" data-to="250" data-suffix="+">0
                 </h2>
-                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Event Sessions</p>
+                <p class="text-zinc-400 md:text-sm text-xs tracking-wide uppercase">Event Sessions</p>
             </div>
 
             <!-- Hours of audio delivered -->
             <div data-aos="fade-up" data-aos-delay="200"
                 class="w-full flex flex-col items-center justify-center gap-2 text-center">
-                <div class="text-zinc-500">
+                <div class="text-zinc-400">
                     <i class="fa-solid fa-headphones"></i>
                 </div>
-                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="1000"
-                    data-suffix="+">0
+                <h2 class="js-counter md:text-6xl text-4xl font-semibold tabular-nums" data-to="1000" data-suffix="+">0
                 </h2>
-                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Hours Delivered</p>
+                <p class="text-zinc-400 md:text-sm text-xs tracking-wide uppercase">Hours Delivered</p>
             </div>
 
             <!-- Client satisfaction -->
             <div data-aos="fade-up" data-aos-delay="300"
                 class="w-full flex flex-col items-center justify-center gap-2 text-center">
-                <div class="text-zinc-500">
+                <div class="text-zinc-400">
                     <i class="fa-solid fa-face-smile"></i>
                 </div>
-                <h2 class="js-counter md:text-6xl text-zinc-700 text-4xl font-semibold tabular-nums" data-to="99"
-                    data-suffix="%">0
+                <h2 class="js-counter md:text-6xl text-4xl font-semibold tabular-nums" data-to="99" data-suffix="%">0
                 </h2>
-                <p class="text-zinc-600 md:text-sm text-xs tracking-wide uppercase">Client Satisfaction</p>
+                <p class="text-zinc-400 md:text-sm text-xs tracking-wide uppercase">Client Satisfaction</p>
             </div>
         </section>
     </div>
+
+    <!-- OPTIONAL: Count-up on view (lightweight, no deps) -->
+    <script>
+        (function () {
+            const easeOut = t => 1 - Math.pow(1 - t, 3);
+            function animateCounter(el) {
+                const to = parseInt(el.dataset.to || '0', 10);
+                const dur = parseInt(el.dataset.duration || '1200', 10);
+                const suffix = el.dataset.suffix || '';
+                const start = performance.now();
+                function frame(now) {
+                    const p = Math.min(1, (now - start) / dur);
+                    const val = Math.round(easeOut(p) * to).toLocaleString();
+                    el.textContent = val + suffix;
+                    if (p < 1) requestAnimationFrame(frame);
+                }
+                requestAnimationFrame(frame);
+            }
+
+            const counters = document.querySelectorAll('.js-counter');
+            const obs = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target); // run once
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(el => obs.observe(el));
+        })();
+    </script>
+
 
     <script>
         (function () {
@@ -259,14 +286,12 @@
                 </div>
             </div>
 
-            <!-- subtle divider -->
-            <div class="mt-12 h-px bg-white/10"></div>
         </div>
     </section>
 
 
     <section id="about-teaser" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:pt-20 pt-14">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
                 <div data-aos="fade-up">
                     <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">About</p>
@@ -297,7 +322,7 @@
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="relative overflow-hidden rounded-2xl border border-white/10">
                     <div class="aspect-[4/3] bg-center bg-cover"
-                        style="background-image:url('/docs/assets/images/about-teaser.jpg');"></div>
+                        style="background-image:url('https://images.unsplash.com/photo-1720962158812-d16549f1e5a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXVkaW8lMjB0aGF0JTIwc2VydmVzJTIwdGhlJTIwcGVyZm9ybWFuY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600');"></div>
                     <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent">
                     </div>
                 </div>
@@ -307,7 +332,7 @@
 
 
     <section id="featured-packages" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:pt-36 pt-14">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Featured Packages</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Popular choices to get you started</h2>
@@ -391,7 +416,7 @@
                     <div class="text-xs uppercase tracking-widest text-zinc-400 inline-flex items-center gap-2">
                         <i class="fa-solid fa-people-group"></i> Events
                     </div>
-                    <h3 class="mt-3 text-xl font-semibold">Broadcast-Ready Event</h3>
+                    <h3 class="mt-3 text-xl font-semibold">Broadcast-Ready</h3>
                     <ul class="mt-4 space-y-2 text-sm text-zinc-300">
                         <li class="flex gap-2"><i class="fa-solid fa-check mt-0.5 text-zinc-400"></i><span>Multi-speaker
                                 capture</span></li>
@@ -414,7 +439,7 @@
 
 
     <section id="process" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:pt-32 pt-14">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">How It Works</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">From request to delivery, clearly</h2>
@@ -423,17 +448,12 @@
             </div>
 
             <div class="relative mt-10">
-                <div
-                    class="hidden md:block absolute inset-x-0 top-9 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent">
-                </div>
+                
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8">
                     <div data-aos="fade-up"
                         class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
                         <div class="flex items-center gap-4">
                             <div class="relative">
-                                <span
-                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
-                                    1</span>
                                 <div
                                     class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-clipboard-list"></i>
@@ -454,9 +474,7 @@
                         class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
                         <div class="flex items-center gap-4">
                             <div class="relative">
-                                <span
-                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
-                                    2</span>
+                                
                                 <div
                                     class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-envelope-open-text"></i>
@@ -476,9 +494,7 @@
                         class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
                         <div class="flex items-center gap-4">
                             <div class="relative">
-                                <span
-                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
-                                    3</span>
+                               
                                 <div
                                     class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-microphone-lines"></i>
@@ -499,9 +515,7 @@
                         class="group relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 hover:bg-white/[0.04] transition">
                         <div class="flex items-center gap-4">
                             <div class="relative">
-                                <span
-                                    class="absolute -top-2 -left-2 text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-widest">Step
-                                    4</span>
+                               
                                 <div
                                     class="w-12 h-12 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
                                     <i class="fa-solid fa-file-audio"></i>
@@ -510,7 +524,7 @@
                             <h3 class="text-xl font-semibold">Deliver</h3>
                         </div>
                         <p class="mt-4 text-zinc-300">Clear timelines and formats that fit your workflow. Priority
-                            delivery available on select packages.</p>
+                            delivery available.</p>
                         <div class="mt-6">
                             <a href="/services.html#events"
                                 class="inline-flex items-center rounded-sm border border-white/15 px-4 py-2 text-sm tracking-wide hover:bg-white/5 transition">Delivery
@@ -531,34 +545,18 @@
     </section>
 
     <section id="testimonials" class="bg-black text-zinc-100">
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-20 py-14">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:pt-32 pt-14">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Testimonials</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Trusted by stages and teams</h2>
                 <p class="mt-3 text-zinc-300">A discreet presence on site, a clear presence in the mix.</p>
             </div>
 
-            <div class="mt-8 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none]" data-aos="fade-up"
-                data-aos-delay="100">
-                <ul class="flex items-center gap-10 opacity-80 hover:opacity-100 transition min-w-max pb-2">
-                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-1.png" alt="Company One"
-                            class="h-10 w-auto grayscale invert" /></li>
-                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-2.png" alt="Company Two"
-                            class="h-10 w-auto grayscale invert" /></li>
-                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-3.png" alt="Company Three"
-                            class="h-10 w-auto grayscale invert" /></li>
-                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-4.png" alt="Company Four"
-                            class="h-10 w-auto grayscale invert" /></li>
-                    <li class="shrink-0 h-10"><img src="/docs/assets/images/logo-5.png" alt="Company Five"
-                            class="h-10 w-auto grayscale invert" /></li>
-                </ul>
-            </div>
-
             <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 <article data-aos="fade-up"
                     class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
                     <div class="flex items-center gap-4">
-                        <img src="/docs/assets/images/avatar-1.jpg" alt="Reviewer"
+                        <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Reviewer"
                             class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
                         <div>
                             <p class="font-medium">Amelia Hart</p>
@@ -577,7 +575,7 @@
                 <article data-aos="fade-up" data-aos-delay="100"
                     class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
                     <div class="flex items-center gap-4">
-                        <img src="/docs/assets/images/avatar-2.jpg" alt="Reviewer"
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Reviewer"
                             class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
                         <div>
                             <p class="font-medium">Rafi Khan</p>
@@ -596,7 +594,7 @@
                 <article data-aos="fade-up" data-aos-delay="200"
                     class="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 hover:bg-white/[0.04] transition">
                     <div class="flex items-center gap-4">
-                        <img src="/docs/assets/images/avatar-3.jpg" alt="Reviewer"
+                        <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Reviewer"
                             class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
                         <div>
                             <p class="font-medium">Sofia Mendes</p>
@@ -633,7 +631,7 @@
         <div class="absolute -bottom-24 -left-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-20"
             style="background: radial-gradient(50% 50% at 50% 50%, #ffffff22 0%, #00000000 70%);"></div>
 
-        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-24 py-16">
+        <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:pt-32 pt-16">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Ready?</p>
                 <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-semibold">Let’s capture your performance with
