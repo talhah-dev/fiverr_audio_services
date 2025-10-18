@@ -5,8 +5,8 @@ footer.innerHTML = `
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14">
       <div class="md:col-span-4" data-aos="fade-up">
         <a href="/index.html" class="inline-flex items-center gap-3">
-          <!-- <img src="/docs/assets/images/logo.png" alt="Company logo" class="h-10 w-auto"> -->
-          <span class="text-lg uppercase tracking-[0.2em] font-medium text-zinc-300">Audio Services</span>
+           <img src="/docs/assets/images/favicon.png" alt="Company logo" class="h-20 invert w-auto"> 
+         <!-- <span class="text-lg uppercase tracking-[0.2em] font-medium text-zinc-300 ">Audio Services</span> -->
         </a>
         <p class="mt-4 text-zinc-300 max-w-sm">Mobile recording for theatre, panels, and live events. Clean dialogue, discreet setup, clear delivery.</p>
         <div class="mt-6 flex flex-wrap gap-3">

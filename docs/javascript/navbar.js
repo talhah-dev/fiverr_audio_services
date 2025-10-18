@@ -5,8 +5,8 @@ dynamic_navbar.innerHTML = `
   <div class="md:max-w-[85%] mx-auto flex justify-between items-center w-full lg:p-5 p-3 lg:h-[116px] h-24">
     <div class="flex w-full items-center justify-between xl:gap-32 gap-20">
       <a data-aos="fade-right" href="/index.html" class="flex items-center justify-center lg:justify-start" aria-label="Go to home">
-        <!-- <img src="/docs/assets/images/logo.png" alt="Company logo" class="h-10 w-auto"> -->
-          <span class="text-lg uppercase tracking-[0.2em] font-medium text-zinc-300">Audio Services</span>
+         <img src="/docs/assets/images/logo.png" alt="Company logo" class="h-20 md:h-20 w-auto"> 
+        <!--  <span class="text-lg uppercase tracking-[0.2em] font-medium text-zinc-300">Audio Services</span> -->
         <span class="sr-only">Home</span>
       </a>
 
