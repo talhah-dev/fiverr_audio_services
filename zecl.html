@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureStage Audio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section id="services-addons" class="bg-black text-zinc-100">
+        <div class="md:max-w-7xl mx-auto px-4 sm:px-6 md:py-16 py-12">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Add-ons</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-semibold">Optional extras to refine your capture</h2>
+                <p class="mt-3 text-zinc-300">Pick the extras you need. You’ll confirm everything on the booking page—no
+                    online payment is taken.</p>
+            </div>
+
+            <div id="addons-grid" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="extra-lav" data-aos="fade-up">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Wireless microphone</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Add an extra lavalier or headset microphone
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="ambience-mic" data-aos="fade-up" data-aos-delay="50">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-wave-square"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Timecode Sync</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Camera and audio alignment for filmed
+                                        productions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="stems-export" data-aos="fade-up" data-aos-delay="100">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-sliders"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Isolated Stems</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Receive separate tracks for flexible
+                                        post-mixing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="priority-turnaround" data-aos="fade-up">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Priority Turnaround</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Accelerated delivery on eligible packages.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="events" data-key="extended-onsite" data-aos="fade-up" data-aos-delay="50">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-people-arrows"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Extended on-site</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Extend on-site time for long runs or double
+                                        performances</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="multitrack-archive" data-aos="fade-up" data-aos-delay="100">
+                    <label class="block cursor-pointer p-6 sm:p-7">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="shrink-0 h-10 w-10 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-hard-drive"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Multitrack Archive</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Long-term archive delivery in your preferred
+                                        format.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
+                        </div>
+                    </label>
+                </article>
+            </div>
+
+            <div class="mt-8"></div>
+
+            <div
+                class="max-w-5xl mx-auto sticky bottom-4 z-10 rounded-xl border border-white/10 bg-black px-4 py-3 flex items-center gap-4 md:flex-row flex-col">
+                <div class="flex items-center gap-2 text-sm text-zinc-300">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+                    <span><span id="srv-addon-count" class="font-semibold">0</span> selected</span>
+                </div>
+                <div class="ml-auto">
+                    <a href="/book.html#booking-form"
+                        class="inline-flex items-center justify-center rounded-lg border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm font-medium tracking-wide hover:opacity-80 transition">Continue
+                        to booking</a>
+                </div>
+            </div>
+
+            <p class="mt-4 text-xs text-zinc-400 text-center">We’ll confirm availability and email next steps. No online
+                payment on the site.</p>
+        </div>
+    </section>
+
+<script>
+(function () {
+  const STORAGE_KEY = 'sv_selected_addons';
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const arr = JSON.parse(raw || '[]');
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch { return new Set(); }
+  }
+
+  function save(set) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...set])); } catch {}
+  }
+
+  function paint(card, on) {
+    const check = card.querySelector('.srv-addon-check');
+    const input = card.querySelector('.srv-addon-input');
+    if (input) input.checked = !!on;
+
+    if (on) {
+      card.classList.add('ring-1','ring-emerald-400/40');
+      if (check) {
+        check.textContent = 'Selected';
+        check.classList.remove('border-white/10','bg-white/[0.02]');
+        check.classList.add('border-emerald-400/30','bg-emerald-400/10','text-emerald-200');
+      }
+      card.setAttribute('aria-pressed','true');
+    } else {
+      card.classList.remove('ring-1','ring-emerald-400/40');
+      if (check) {
+        check.textContent = 'Select';
+        check.classList.add('border-white/10','bg-white/[0.02]');
+        check.classList.remove('border-emerald-400/30','bg-emerald-400/10','text-emerald-200');
+      }
+      card.setAttribute('aria-pressed','false');
+    }
+  }
+
+  function updateCount(set) {
+    const el = document.getElementById('srv-addon-count');
+    if (el) el.textContent = String(set.size);
+  }
+
+  function init() {
+    const set = load();
+    const cards = document.querySelectorAll('.srv-addon');
+
+    // Restore from localStorage
+    cards.forEach(card => {
+      const key = card.dataset.key;
+      paint(card, set.has(key));
+
+      const input = card.querySelector('.srv-addon-input');
+      const label = card.querySelector('label');
+
+      // When checkbox changes (via clicking the label/card), persist + repaint
+      input.addEventListener('change', () => {
+        if (input.checked) set.add(key); else set.delete(key);
+        save(set);
+        paint(card, input.checked);
+        updateCount(set);
+      });
+
+      // Make the whole card act like a button (label already wraps content)
+      label.addEventListener('click', () => {
+        // let the native label→checkbox toggle happen; the 'change' listener above will run
+      });
+
+      // Optional keyboard support on the card itself
+      card.setAttribute('tabindex','0');
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          input.click(); // triggers 'change'
+        }
+      });
+    });
+
+    updateCount(set);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+
+</body>
+
+</html>

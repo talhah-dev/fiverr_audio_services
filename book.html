@@ -38,7 +38,8 @@
         <div id="navbar"></div>
         <div class="absolute inset-0 -z-10">
             <div class="h-full w-full bg-center bg-cover"
-                style="background-image:url('https://images.unsplash.com/photo-1651439286034-9008fe5fc88f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXVkaW8lMjBjYXB0dXJlJTIwZm9yJTIwbGl2ZSUyMHRoZWF0cmUlMjAlMjYlMjBldmVudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600');"></div>
+                style="background-image:url('https://images.unsplash.com/photo-1651439286034-9008fe5fc88f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXVkaW8lMjBjYXB0dXJlJTIwZm9yJTIwbGl2ZSUyMHRoZWF0cmUlMjAlMjYlMjBldmVudHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600');">
+            </div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/90"></div>
         </div>
 
@@ -60,7 +61,8 @@
                     <div class="mt-6 flex flex-wrap items-center gap-5 text-sm text-zinc-400">
                         <span class="inline-flex items-center gap-2"><i class="fa-solid fa-bolt"></i> Typically replies
                             within 1–2 business days</span>
-                        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-location-dot"></i> London area
+                        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-location-dot"></i>
+                            London area
                             + regional travel</span>
                     </div>
                 </div>
@@ -507,7 +509,7 @@
         })();
     </script>
 
-    <section id="addons" class="bg-black overflow-x-hidden text-zinc-100">
+    <section id="services-addons" class="bg-black text-zinc-100">
         <div class="md:max-w-7xl mx-auto px-4 sm:px-6 md:py-16 py-12">
             <div class="max-w-3xl" data-aos="fade-up">
                 <p class="uppercase tracking-[0.25em] text-xs text-zinc-400">Add-ons</p>
@@ -515,12 +517,11 @@
                 <p class="mt-3 text-zinc-300">Optional extras to match your stage, schedule, and delivery needs.</p>
             </div>
 
-            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article data-aos="fade-up"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="theatre,events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="extra-lav" data-price="40">
+            <div id="addons-grid" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="extra-lav" data-aos="fade-up">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -528,21 +529,24 @@
                                     <i class="fa-solid fa-microphone"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-semibold">Extra Lavalier Mic</h3>
-                                    <p class="mt-1 text-sm text-zinc-300">Add one discreet lav for an additional
-                                        performer or host.</p>
+                                    <h3 class="text-lg font-semibold">Wireless microphone</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Add an extra lavalier or headset microphone
+                                    </p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£40</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
 
-                <article data-aos="fade-up" data-aos-delay="50"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="theatre,events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="ambience-mic" data-price="30">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="ambience-mic" data-aos="fade-up" data-aos-delay="50">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -550,21 +554,24 @@
                                     <i class="fa-solid fa-wave-square"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-semibold">Room Ambience Mic</h3>
-                                    <p class="mt-1 text-sm text-zinc-300">Capture natural room tone for a fuller, live
-                                        feel.</p>
+                                    <h3 class="text-lg font-semibold">Timecode Sync</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Camera and audio alignment for filmed
+                                        productions.</p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£30</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
 
-                <article data-aos="fade-up" data-aos-delay="100"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="theatre,events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="stems-export" data-price="60">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="stems-export" data-aos="fade-up" data-aos-delay="100">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -572,21 +579,24 @@
                                     <i class="fa-solid fa-sliders"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-semibold">Isolated Stems Export</h3>
-                                    <p class="mt-1 text-sm text-zinc-300">Receive isolated tracks for post-mix
-                                        flexibility.</p>
+                                    <h3 class="text-lg font-semibold">Isolated Stems</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Receive separate tracks for flexible
+                                        post-mixing.</p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£60</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
 
-                <article data-aos="fade-up"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="theatre,events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="priority-turnaround" data-price="80">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="priority-turnaround" data-aos="fade-up">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -598,16 +608,19 @@
                                     <p class="mt-1 text-sm text-zinc-300">Accelerated delivery on eligible packages.</p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£80</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
 
-                <article data-aos="fade-up" data-aos-delay="50"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="tech-liaison" data-price="50">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="events" data-key="extended-onsite" data-aos="fade-up" data-aos-delay="50">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -615,21 +628,24 @@
                                     <i class="fa-solid fa-people-arrows"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-semibold">Tech Liaison</h3>
-                                    <p class="mt-1 text-sm text-zinc-300">Coordination with venue/video teams and stage
-                                        management.</p>
+                                    <h3 class="text-lg font-semibold">Extended on-site</h3>
+                                    <p class="mt-1 text-sm text-zinc-300">Extend on-site time for long runs or double
+                                        performances</p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£50</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
 
-                <article data-aos="fade-up" data-aos-delay="100"
-                    class="addon-card group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
-                    data-cat="theatre,events">
-                    <label class="cursor-pointer block p-6 sm:p-7">
-                        <input type="checkbox" class="addon-input sr-only" value="multitrack-archive" data-price="90">
+                <article
+                    class="srv-addon group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition"
+                    data-cat="theatre,events" data-key="multitrack-archive" data-aos="fade-up" data-aos-delay="100">
+                    <label class="block cursor-pointer p-6 sm:p-7">
                         <div class="flex items-start justify-between gap-4">
                             <div class="flex items-start gap-4">
                                 <div
@@ -642,7 +658,11 @@
                                         format.</p>
                                 </div>
                             </div>
-                            <!-- <span class="price text-sm px-2 py-1 rounded-md bg-white/10 text-zinc-200">£90</span> -->
+                        </div>
+                        <div class="mt-4">
+                            <input type="checkbox" class="srv-addon-input sr-only">
+                            <span
+                                class="srv-addon-check inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.02]">Select</span>
                         </div>
                     </label>
                 </article>
@@ -650,101 +670,121 @@
 
             <div class="mt-8"></div>
 
-            <div id="addons-summary"
-                class="sticky bottom-4 z-10 max-w-3xl mx-auto flex items-center gap-4 rounded-xl border border-white/10 bg-black px-4 py-3">
+            <div
+                class="max-w-5xl mx-auto sticky bottom-4 z-10 rounded-xl border border-white/10 bg-black px-4 py-3 flex items-center gap-4 md:flex-row flex-col">
                 <div class="flex items-center gap-2 text-sm text-zinc-300">
                     <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
-                    <span><span id="addons-count" class="font-semibold">0</span> selected</span>
+                    <span><span id="srv-addon-count" class="font-semibold">0</span> selected</span>
                 </div>
-                <div class="ml-auto flex md:flex-row flex-col items-center gap-3">
-                    <!-- <div class="text-sm text-zinc-400">Subtotal</div>
-                    <div id="addons-total" class="text-lg font-semibold">£0</div> -->
-                    <button id="addons-continue"
-                        class="inline-flex items-center justify-center rounded-lg border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm font-medium tracking-wide hover:opacity-80 transition">
-                        <span id="addons-continue-text">Continue to Booking</span>
-                        <svg id="addons-continue-spin" class="ml-2 h-4 w-4 animate-spin hidden" viewBox="0 0 24 24"
-                            fill="none">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
-                        </svg>
-                    </button>
+                <div class="ml-auto">
+                    <a href="/book.html#booking-form"
+                        class="inline-flex items-center justify-center rounded-lg border border-zinc-100 bg-zinc-100 text-black px-5 py-2.5 text-sm font-medium tracking-wide hover:opacity-80 transition">Continue
+                        to booking</a>
                 </div>
             </div>
+
+            <p class="mt-4 text-xs text-zinc-400 text-center">We’ll confirm availability and email next steps. No online
+                payment on the site.</p>
         </div>
     </section>
 
     <script>
         (function () {
-            const params = new URLSearchParams(location.search);
-            const currentCat = (params.get('cat') || '').toLowerCase();
-            document.querySelectorAll('.addon-card').forEach(card => {
-                const cats = (card.dataset.cat || '').split(',').map(s => s.trim().toLowerCase());
-                if (currentCat && cats.length && !cats.includes(currentCat)) {
-                    card.classList.add('opacity-30', 'pointer-events-none');
-                }
-            });
+            const STORAGE_KEY = 'sv_selected_addons';
 
-            const inputs = Array.from(document.querySelectorAll('.addon-input'));
-            const totalEl = document.getElementById('addons-total');
-            const countEl = document.getElementById('addons-count');
-            const btn = document.getElementById('addons-continue');
-            const btnText = document.getElementById('addons-continue-text');
-            const btnSpin = document.getElementById('addons-continue-spin');
+            function load() {
+                try {
+                    const raw = localStorage.getItem(STORAGE_KEY);
+                    const arr = JSON.parse(raw || '[]');
 
-            function money(n) { return '£' + Number(n).toFixed(0); }
-
-            function syncFromURL() {
-                const selected = (params.get('addons') || '').split(',').map(s => s.trim()).filter(Boolean);
-                inputs.forEach(i => { i.checked = selected.includes(i.value); });
-                recalc();
-            }
-
-            function recalc() {
-                let sum = 0, cnt = 0;
-                inputs.forEach(i => {
-                    if (i.checked) {
-                        cnt++;
-                        sum += Number(i.dataset.price || 0);
-                        i.closest('.addon-card').classList.add('ring-1', 'ring-emerald-400/40');
-                    } else {
-                        i.closest('.addon-card').classList.remove('ring-1', 'ring-emerald-400/40');
+                    // ensure it's an array of strings only
+                    if (Array.isArray(arr)) {
+                        return new Set(arr.filter(x => typeof x === 'string' && x.trim() !== ''));
                     }
-                });
-                totalEl.textContent = money(sum);
-                countEl.textContent = String(cnt);
+                    return new Set();
+                } catch {
+                    return new Set();
+                }
             }
 
-            inputs.forEach(i => i.addEventListener('change', () => {
-                recalc();
-            }));
+            function save(set) {
+                try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...set])); } catch { }
+            }
 
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                btn.setAttribute('disabled', 'true');
-                btn.classList.add('opacity-80', 'cursor-not-allowed');
-                btnSpin.classList.remove('hidden');
-                btnText.textContent = 'Updating…';
+            function paint(card, on) {
+                const check = card.querySelector('.srv-addon-check');
+                const input = card.querySelector('.srv-addon-input');
+                if (input) input.checked = !!on;
 
-                const selected = inputs.filter(i => i.checked).map(i => i.value);
-                const p = new URLSearchParams(location.search);
-                if (selected.length) p.set('addons', selected.join(',')); else p.delete('addons');
-                const newUrl = location.pathname + '?' + p.toString() + '#booking-form';
-                history.replaceState(null, '', newUrl);
+                if (on) {
+                    card.classList.add('ring-1', 'ring-emerald-400/40');
+                    if (check) {
+                        check.textContent = 'Selected';
+                        check.classList.remove('border-white/10', 'bg-white/[0.02]');
+                        check.classList.add('border-emerald-400/30', 'bg-emerald-400/10', 'text-emerald-200');
+                    }
+                    card.setAttribute('aria-pressed', 'true');
+                } else {
+                    card.classList.remove('ring-1', 'ring-emerald-400/40');
+                    if (check) {
+                        check.textContent = 'Select';
+                        check.classList.add('border-white/10', 'bg-white/[0.02]');
+                        check.classList.remove('border-emerald-400/30', 'bg-emerald-400/10', 'text-emerald-200');
+                    }
+                    card.setAttribute('aria-pressed', 'false');
+                }
+            }
 
-                const target = document.querySelector('#booking-form');
-                setTimeout(() => {
-                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    btn.removeAttribute('disabled');
-                    btn.classList.remove('opacity-80', 'cursor-not-allowed');
-                    btnSpin.classList.add('hidden');
-                    btnText.textContent = 'Continue to Booking';
-                }, 500);
-            });
+            function updateCount(set) {
+                const el = document.getElementById('srv-addon-count');
+                if (el) el.textContent = String(set.size);
+            }
 
-            syncFromURL();
+            function init() {
+                const set = load();
+                const cards = document.querySelectorAll('.srv-addon');
+
+                // Restore from localStorage
+                cards.forEach(card => {
+                    const key = card.dataset.key;
+                    paint(card, set.has(key));
+
+                    const input = card.querySelector('.srv-addon-input');
+                    const label = card.querySelector('label');
+
+                    // When checkbox changes (via clicking the label/card), persist + repaint
+                    input.addEventListener('change', () => {
+                        if (input.checked) set.add(key); else set.delete(key);
+                        save(set);
+                        paint(card, input.checked);
+                        updateCount(set);
+                    });
+
+                    // Make the whole card act like a button (label already wraps content)
+                    label.addEventListener('click', () => {
+                        // let the native label→checkbox toggle happen; the 'change' listener above will run
+                    });
+
+                    // Optional keyboard support on the card itself
+                    card.setAttribute('tabindex', '0');
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            input.click(); // triggers 'change'
+                        }
+                    });
+                });
+
+                updateCount(set);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
         })();
     </script>
-
 
     <section id="booking-form" class="bg-black overflow-x-hidden text-zinc-100">
         <div class="md:max-w-[85%] mx-auto px-4 sm:px-6 md:py-16 py-12">
@@ -855,6 +895,11 @@
                                     <select id="bk_pkg" name="package" required
                                         class="w-full appearance-none rounded-xl bg-black/40 border border-white/10 focus:border-white/20 focus:ring-0 outline-none pl-10 pr-10 py-3 text-zinc-100">
                                         <option value="" disabled selected>Select a package</option>
+                                        <option value="Essential">Essential</option>
+                                        <option value="Standard">Standard</option>
+                                        <option value="Premium">Premium</option>
+                                        <option value="Enterprise">Enterprise</option>
+
                                     </select>
                                     <span
                                         class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400"><i
@@ -1027,275 +1072,199 @@
         </div>
     </section>
 
-    <div id="bookingPopup" class="fixed overflow-x-hidden inset-0 z-[70] hidden bg-black/70 backdrop-blur">
-        <div
-            class="absolute left-1/2 top-1/2 w-[90%] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-zinc-900 p-6 text-zinc-100">
-            <div id="bpSending" class="flex flex-col items-center text-center gap-3">
-                <svg class="h-8 w-8 animate-spin" viewBox="0 0 24 24" fill="none">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
-                </svg>
-                <p class="text-lg font-medium">Submitting your request…</p>
-                <p class="text-sm text-zinc-400">Please wait a moment.</p>
-            </div>
-            <div id="bpSuccess" class="hidden flex flex-col items-center text-center gap-3">
-                <i class="fa-solid fa-circle-check text-3xl text-emerald-400"></i>
-                <p class="text-lg font-medium">Thanks! Your booking request was sent.</p>
-                <button type="button"
-                    class="bpClose inline-flex items-center rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 transition">Close</button>
-            </div>
-            <div id="bpError" class="hidden flex flex-col items-center text-center gap-3">
-                <i class="fa-solid fa-circle-exclamation text-3xl text-red-400"></i>
-                <p class="text-lg font-medium">Something went wrong.</p>
-                <p class="text-sm text-zinc-400">Please try again or email us directly.</p>
-                <button type="button"
-                    class="bpClose inline-flex items-center rounded-md border border-white/15 px-4 py-2 text-sm hover:bg-white/5 transition">Close</button>
-            </div>
-        </div>
-    </div>
+
 
     <script>
         (function () {
-            const form = document.getElementById('bookingForm');
-            const submitBtn = document.getElementById('bk_submit');
-            const btnText = document.getElementById('bk_btn_text');
-            const btnSpin = document.getElementById('bk_btn_spin');
-            const alertEl = document.getElementById('bk_alert');
-
-            const catEl = document.getElementById('bk_cat');
-            const pkgEl = document.getElementById('bk_pkg');
-            const dateEl = document.getElementById('bk_date');
-            const timeEl = document.getElementById('bk_time');
-            const locEl = document.getElementById('bk_location');
-            const notesEl = document.getElementById('bk_notes');
-            const charEl = document.getElementById('bk_char');
-
-            const sumCat = document.getElementById('sum_cat');
-            const sumPkg = document.getElementById('sum_pkg');
-            const sumDate = document.getElementById('sum_date');
-            const sumTime = document.getElementById('sum_time');
-            const sumLoc = document.getElementById('sum_loc');
-            const sumAddons = document.getElementById('sum_addons');
-            const sumAddonsTotal = document.getElementById('sum_addons_total');
-
-            const hiddenPkg = document.getElementById('hidden_pkg');
-            const hiddenAddons = document.getElementById('hidden_addons');
-            const hiddenAddonsTotal = document.getElementById('hidden_addons_total');
-
-            const popup = document.getElementById('bookingPopup');
-            const bpSending = document.getElementById('bpSending');
-            const bpSuccess = document.getElementById('bpSuccess');
-            const bpError = document.getElementById('bpError');
-            document.querySelectorAll('.bpClose').forEach(b => b.addEventListener('click', () => popup.classList.add('hidden')));
-
-            const PACKAGES = {
-                theatre: [
-                    { value: 'theatre-essential', label: 'Essential' },
-                    { value: 'theatre-standard', label: 'Standard' },
-                    { value: 'theatre-premium', label: 'Premium' },
-                    { value: 'theatre-enterprise', label: 'Enterprise' },
-                ],
-                events: [
-                    { value: 'events-presentation', label: 'Presentation Capture' },
-                    { value: 'events-panel', label: 'Multi-Speaker / Panel' },
-                    { value: 'events-broadcast', label: 'Broadcast-Ready Event' },
-                ]
-            };
-
-            const ADDON_MAP = {
+            const STORAGE_KEY = 'sv_selected_addons';
+            const LABELS = {
                 'extra-lav': 'Extra Lavalier Mic',
                 'ambience-mic': 'Room Ambience Mic',
                 'stems-export': 'Isolated Stems Export',
                 'priority-turnaround': 'Priority Turnaround',
-                'tech-liaison': 'Tech Liaison',
+                'extended-onsite': 'Extended On-site',
                 'multitrack-archive': 'Multitrack Archive'
             };
-            const ADDON_PRICE = {
-                'extra-lav': 40,
-                'ambience-mic': 30,
-                'stems-export': 60,
-                'priority-turnaround': 80,
-                'tech-liaison': 50,
-                'multitrack-archive': 90
-            };
 
-            function setBtnLoading(s) {
-                if (s) {
-                    submitBtn.setAttribute('disabled', 'true');
-                    submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
-                    btnSpin.classList.remove('hidden');
-                    btnText.textContent = 'Submitting…';
-                } else {
-                    submitBtn.removeAttribute('disabled');
-                    submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
-                    btnSpin.classList.add('hidden');
-                    btnText.textContent = 'Submit Booking Request';
-                }
-            }
-
-            function showPopupState(state) {
-                popup.classList.remove('hidden');
-                bpSending.classList.toggle('hidden', state !== 'sending');
-                bpSuccess.classList.toggle('hidden', state !== 'success');
-                bpError.classList.toggle('hidden', state !== 'error');
-            }
-
-            function money(n) { return '£' + Number(n || 0).toFixed(0); }
-
-            function populatePackages(cat, keepCurrent) {
-                pkgEl.innerHTML = '<option value="" disabled selected>Select a package</option>';
-                if (!PACKAGES[cat]) return;
-                PACKAGES[cat].forEach(p => {
-                    const opt = document.createElement('option');
-                    opt.value = p.value;
-                    opt.textContent = p.label;
-                    pkgEl.appendChild(opt);
-                });
-                if (keepCurrent && hiddenPkg.value) {
-                    pkgEl.value = hiddenPkg.value;
-                    if (!pkgEl.value) hiddenPkg.value = '';
-                }
-            }
-
-            function updateSummary() {
-                const catLabel = (catEl.value === 'theatre') ? 'Theatre' : (catEl.value === 'events') ? 'Corporate & Events' : '—';
-                const pkgLabel = (() => {
-                    const v = pkgEl.value;
-                    if (!v) return '—';
-                    const arr = PACKAGES[catEl.value] || [];
-                    const f = arr.find(x => x.value === v);
-                    return f ? f.label : v;
-                })();
-                sumCat.textContent = catLabel;
-                sumPkg.textContent = pkgLabel;
-                sumDate.textContent = dateEl.value || '—';
-                sumTime.textContent = timeEl.value || '—';
-                sumLoc.textContent = locEl.value || '—';
-                hiddenPkg.value = pkgEl.value || '';
-
-                const params = new URLSearchParams(location.search);
-                const addons = (params.get('addons') || '').split(',').map(s => s.trim()).filter(Boolean);
-                sumAddons.innerHTML = '';
-                let subtotal = 0;
-                addons.forEach(key => {
-                    const label = ADDON_MAP[key] || key;
-                    const chip = document.createElement('span');
-                    chip.className = 'text-xs px-2 py-1 rounded-md bg-white/10 text-zinc-200';
-                    chip.textContent = label;
-                    sumAddons.appendChild(chip);
-                    subtotal += ADDON_PRICE[key] || 0;
-                });
-                if (addons.length === 0) {
-                    const chip = document.createElement('span');
-                    chip.className = 'text-xs px-2 py-1 rounded-md bg-white/10 text-zinc-400';
-                    chip.textContent = 'None selected';
-                    sumAddons.appendChild(chip);
-                }
-                sumAddonsTotal.textContent = money(subtotal);
-                hiddenAddons.value = addons.join(', ');
-                hiddenAddonsTotal.value = subtotal.toString();
-            }
-
-            function prefillFromParams() {
-                const p = new URLSearchParams(location.search);
-                const cat = (p.get('cat') || '').toLowerCase();
-                const pkg = (p.get('pkg') || '').toLowerCase();
-                const date = p.get('date') || '';
-                const loc = p.get('loc') ? decodeURIComponent(p.get('loc')) : '';
-
-                if (cat) { catEl.value = cat; populatePackages(cat, false); }
-                if (pkg) { hiddenPkg.value = pkg; populatePackages(cat || catEl.value, true); }
-                if (date) { dateEl.value = date; }
-                if (loc) { locEl.value = loc; }
-                updateSummary();
-            }
-
-            function markValidity(el, ok) {
-                if (ok) { el.classList.remove('border-red-500/40'); el.setAttribute('aria-invalid', 'false'); }
-                else { el.classList.add('border-red-500/40'); el.setAttribute('aria-invalid', 'true'); }
-            }
-
-            notesEl.addEventListener('input', () => {
-                const len = Math.min(1000, notesEl.value.length);
-                charEl.textContent = String(len);
-                if (notesEl.value.length > 1000) notesEl.value = notesEl.value.slice(0, 1000);
-            });
-
-            ['change', 'input', 'blur'].forEach(evt => {
-                [catEl, pkgEl, dateEl, timeEl, locEl].forEach(el => {
-                    el.addEventListener(evt, () => {
-                        if (el.required) markValidity(el, el.checkValidity());
-                        updateSummary();
-                    });
-                });
-            });
-
-            catEl.addEventListener('change', () => {
-                populatePackages(catEl.value, false);
-                updateSummary();
-            });
-
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                alertEl.classList.add('hidden');
-
-                const honeypot1 = document.getElementById('website').value;
-                const honeypot2 = document.getElementById('botcheck').checked;
-                if (honeypot1 || honeypot2) return;
-
-                const requiredIds = ['bk_name', 'bk_email', 'bk_cat', 'bk_pkg', 'bk_date', 'bk_location', 'bk_consent'];
-                let okAll = true;
-                requiredIds.forEach(id => {
-                    const el = document.getElementById(id);
-                    const ok = el.type === 'checkbox' ? el.checked : el.checkValidity();
-                    markValidity(el, ok);
-                    if (!ok) okAll = false;
-                });
-                if (!okAll) {
-                    showAlert('error', 'Please fill all required fields.');
-                    window.scrollTo({ top: form.offsetTop - 120, behavior: 'smooth' });
-                    return;
-                }
-
+            function loadSelected() {
                 try {
-                    setBtnLoading(true);
-                    showPopupState('sending');
-                    const fd = new FormData(form);
-                    const res = await fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: fd,
-                        headers: { 'Accept': 'application/json' }
-                    });
-                    const result = await res.json();
-                    if (result.success) {
-                        form.reset();
-                        charEl.textContent = '0';
-                        updateSummary();
-                        showPopupState('success');
-                        setTimeout(() => popup.classList.add('hidden'), 3000);
-                    } else {
-                        showPopupState('error');
-                    }
-                } catch (err) {
-                    showPopupState('error');
-                } finally {
-                    setBtnLoading(false);
-                }
-            });
-
-            function showAlert(type, text) {
-                alertEl.className = 'text-sm rounded-xl px-4 py-3 ' + (type === 'success'
-                    ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20'
-                    : 'bg-red-500/10 text-red-300 border border-red-500/20');
-                alertEl.textContent = text;
-                alertEl.classList.remove('hidden');
+                    const arr = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+                    return new Set(Array.isArray(arr) ? arr.filter(x => typeof x === 'string' && x.trim()) : []);
+                } catch { return new Set(); }
             }
 
-            populatePackages(catEl.value || 'theatre', false);
-            prefillFromParams();
+            function renderAddons() {
+                const chips = document.getElementById('sum_addons');
+                const countEl = document.getElementById('sum_addons_total');
+                const hiddenVals = document.getElementById('hidden_addons');
+                const hiddenCount = document.getElementById('hidden_addons_total');
+                if (!chips) return;
+
+                chips.innerHTML = '';
+                const keys = [...loadSelected()];
+
+                if (keys.length === 0) {
+                    const chip = document.createElement('span');
+                    chip.className = 'text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.06] text-zinc-400';
+                    chip.textContent = 'None selected';
+                    chips.appendChild(chip);
+                } else {
+                    keys.forEach(k => {
+                        const chip = document.createElement('span');
+                        chip.className = 'text-xs px-2 py-1 rounded-md border border-white/10 bg-white/[0.06]';
+                        chip.textContent = LABELS[k] || k;
+                        chips.appendChild(chip);
+                    });
+                }
+
+                if (countEl) {
+                    countEl.textContent = String(keys.length);
+                    const leftLabel = countEl.previousElementSibling;
+                    if (leftLabel) leftLabel.textContent = 'Add-ons Selected';
+                }
+                if (hiddenVals) hiddenVals.value = keys.join(',');
+                if (hiddenCount) hiddenCount.value = String(keys.length);
+            }
+
+            function textOrDash(s) { return s && s.trim() ? s : '—'; }
+
+            function syncSummary() {
+                const cat = document.getElementById('bk_cat');
+                const pkg = document.getElementById('bk_pkg');
+                const date = document.getElementById('bk_date');
+                const time = document.getElementById('bk_time');
+                const loc = document.getElementById('bk_location');
+
+                const sum_cat = document.getElementById('sum_cat');
+                const sum_pkg = document.getElementById('sum_pkg');
+                const sum_date = document.getElementById('sum_date');
+                const sum_time = document.getElementById('sum_time');
+                const sum_loc = document.getElementById('sum_loc');
+                const hidden_pkg = document.getElementById('hidden_pkg');
+
+                if (sum_cat && cat) sum_cat.textContent = cat.value ? cat.options[cat.selectedIndex].text : '—';
+                if (sum_pkg && pkg) sum_pkg.textContent = pkg.value ? (pkg.options[pkg.selectedIndex].text || pkg.value) : '—';
+                if (sum_date && date) sum_date.textContent = textOrDash(date.value);
+                if (sum_time && time) sum_time.textContent = textOrDash(time.value);
+                if (sum_loc && loc) sum_loc.textContent = textOrDash(loc.value);
+                if (hidden_pkg && pkg) hidden_pkg.value = pkg.value || '';
+            }
+
+            function setBtnLoading(on) {
+                const btn = document.getElementById('bk_submit');
+                const txt = document.getElementById('bk_btn_text');
+                const spin = document.getElementById('bk_btn_spin');
+                if (!btn || !txt || !spin) return;
+                if (on) {
+                    btn.setAttribute('disabled', 'true');
+                    btn.classList.add('opacity-80', 'cursor-not-allowed');
+                    spin.classList.remove('hidden');
+                    txt.textContent = 'Submitting…';
+                } else {
+                    btn.removeAttribute('disabled');
+                    btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                    spin.classList.add('hidden');
+                    txt.textContent = 'Submit Booking Request';
+                }
+            }
+
+            function showAlert(type, message) {
+                const el = document.getElementById('bk_alert');
+                if (!el) return;
+                el.className = 'text-sm rounded-xl px-4 py-3 ' + (
+                    type === 'success'
+                        ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20'
+                        : 'bg-red-500/10 text-red-300 border border-red-500/20'
+                );
+                el.textContent = message;
+                el.classList.remove('hidden');
+            }
+
+            function bindLive() {
+                // Live mirror
+                ['bk_cat', 'bk_pkg', 'bk_date', 'bk_time', 'bk_location'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        el.addEventListener('input', syncSummary);
+                        el.addEventListener('change', syncSummary);
+                    }
+                });
+
+                // Notes counter
+                const notes = document.getElementById('bk_notes');
+                const counter = document.getElementById('bk_char');
+                if (notes && counter) {
+                    const upd = () => { counter.textContent = String((notes.value || '').length); };
+                    notes.addEventListener('input', upd);
+                    upd();
+                }
+
+                // Date/time picker buttons
+                document.querySelectorAll('[data-open-picker]').forEach(btn => {
+                    const target = document.querySelector(btn.getAttribute('data-open-picker'));
+                    if (target && target.showPicker) btn.addEventListener('click', () => target.showPicker());
+                });
+
+                // Listen for localStorage changes (addons) from other tabs
+                window.addEventListener('storage', (e) => {
+                    if (e.key === STORAGE_KEY) renderAddons();
+                });
+
+                // Submit via Web3Forms (AJAX) and show a simple success message
+                const form = document.getElementById('bookingForm');
+                if (form) {
+                    form.addEventListener('submit', async (e) => {
+                        e.preventDefault();
+
+                        // Basic HTML5 validation
+                        if (!form.reportValidity()) return;
+
+                        // Keep hidden fields up to date
+                        syncSummary();
+                        renderAddons();
+
+                        // Honeypot check
+                        const hp1 = document.getElementById('website');
+                        const hp2 = document.getElementById('botcheck');
+                        if ((hp1 && hp1.value) || (hp2 && hp2.checked)) return;
+
+                        try {
+                            setBtnLoading(true);
+                            const fd = new FormData(form);
+                            const res = await fetch('https://api.web3forms.com/submit', {
+                                method: 'POST',
+                                body: fd,
+                                headers: { 'Accept': 'application/json' }
+                            });
+                            const data = await res.json();
+                            if (data.success) {
+                                showAlert('success', 'Your form has been submitted. We’ll email you shortly.');
+                                form.reset();
+                                // Refresh summary after reset
+                                document.getElementById('bk_char') && (document.getElementById('bk_char').textContent = '0');
+                                syncSummary();
+                            } else {
+                                showAlert('error', 'Something went wrong submitting the form. Please try again.');
+                            }
+                        } catch {
+                            showAlert('error', 'Network error. Please try again.');
+                        } finally {
+                            setBtnLoading(false);
+                        }
+                    });
+                }
+            }
+
+            function init() {
+                renderAddons();
+                syncSummary();
+                bindLive();
+            }
+
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+            else init();
         })();
     </script>
-
 
 
 
